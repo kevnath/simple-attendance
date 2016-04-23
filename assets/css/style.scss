@@ -1,0 +1,36 @@
+$white: #fff;
+
+body {
+  background-color: #eeeeee;
+}
+
+.attendance-section {
+  position: absolute;
+  border-radius: 4px;
+  padding: 15px;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+
+  > h2 {
+    text-align: center;
+  }
+}
+.attendance-message {
+  visibility: hidden;
+  font-size: 1.3em;
+  text-align: center;
+}
+.attendance-input {
+  height: auto !important;
+}
+.input-center {
+  text-align: center;
+  font-size: 2em;
+}
+
+#select-emp {
+    margin: 10px 0;
+}
