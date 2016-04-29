@@ -12,6 +12,9 @@
 	<div class="container">
 		<div class="attendance-section">
 			<h2>Attendance</h2>
+			<div class="time">
+
+			</div>
 			<div>
 				<form id="form-input">
 					<div class="form-group">
@@ -24,6 +27,7 @@
 				
 			</p>
 		</div>
+		<script src="assets/js/time.js"></script>
 	</div>
 </body>
 </html>

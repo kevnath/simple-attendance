@@ -23,6 +23,7 @@ class AttendanceRepository extends Repository
     }
 
     public function setTimeIn($id) {
+        date_default_timezone_set('Asia/Jakarta');
         $stmt = $this->db->prepare('INSERT INTO attendance VALUES(null, ?, now(), null)');
         $stmt->execute(array($id));
     }
