@@ -4,7 +4,14 @@ $(document).ready(function() {
 
     function setTime() {
         var date = new Date();
-        divTime.html( date.getHours()+":"+date.getMinutes()+":"+date.getSeconds());
+        var hour = date.getHours();
+        var minute = date.getMinutes();
+        if(minute < 10)
+        	minute = '0' + date.getMinutes();
+        var second = date.getSeconds();
+        if(second < 10)
+        	second = '0' + date.getSeconds();
+        divTime.html(hour+':'+minute+':'+second);
     }
 
     setInterval(setTime, 1000);
